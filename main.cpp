@@ -1,0 +1,40 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main(){
+
+    cout << "Payslip for Employee" << endl;
+    cout << "------------------------" << endl;
+    
+        string Name;
+    cout << "Name: ";
+    cin >> Name;
+    
+    int Gross;
+    cout << "Gross Salary: " << "IDR";
+    cin >> Gross;
+    
+    int Tax = (0.20)*Gross;
+    cout << fixed << "Tax: " << "IDR" << Tax << endl;
+    
+    float Installment;
+    cout << "Installment: " << "IDR";
+    cin >> Installment;
+    
+    float Insurance;
+    cout << "Insurance: " << "IDR";
+    cin >> Insurance;
+    
+    int Net = Gross - Tax - Installment - Insurance;
+    cout << fixed << "Net Salary: " << "IDR" << Net;
+    
+}
